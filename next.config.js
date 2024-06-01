@@ -8,7 +8,7 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: "build", // Relative to the .next directory
+  distDir: "./dist", // Relative to the .next directory
 };
 
 export default nextConfig;
