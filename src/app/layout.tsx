@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
+import Providers from "./providers";
+import "@mantine/core/styles.css";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const metadata: Metadata = {
@@ -15,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div id="root">{children}</div>
+        <Providers>
+          <div id="root">{children}</div>
+        </Providers>
       </body>
     </html>
   );
