@@ -1,6 +1,6 @@
 import React from "react";
 import "../../index.css";
-import { ClientOnly } from "./client";
+import { ClientOnly } from "./Client";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export function generateStaticParams() {
