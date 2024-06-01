@@ -34,7 +34,9 @@
   "include": [
     "vite.config.ts",
     "./dist/types/**/*.ts",
-    "./next-env.d.ts"
+    "./next-env.d.ts",
+    ".next/types/**/*.ts",
+    "build/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

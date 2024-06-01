@@ -12,6 +12,7 @@ dist-ssr
 *.local
 
 .next
+build
 next-env.d.ts
 # Editor directories and files
 .vscode/*
