@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import Providers from "./providers";
+import "./globals.css";
 import "@mantine/core/styles.css";
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -15,11 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-mantine-color-scheme="light">
       <body>
-        <Providers>
-          <div id="root">{children}</div>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

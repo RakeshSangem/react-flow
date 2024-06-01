@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { Group, ScrollArea } from "@mantine/core";
 import {
@@ -13,6 +15,7 @@ import {
 } from "@tabler/icons-react";
 import classes from "./Sidebar.module.css";
 import Logo from "./Logo";
+import React from "react";
 
 const data = [
   { link: "", label: "Notifications", icon: IconBellRinging },
@@ -24,7 +27,7 @@ const data = [
   { link: "", label: "Other Settings", icon: IconSettings },
 ];
 
-export function Sidebar() {
+export default function Sidebar() {
   const [active, setActive] = useState("Billing");
 
   const links = data.map((item) => (
